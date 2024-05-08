@@ -27,7 +27,7 @@ jobs:
           sudo -E apt-get -qq clean
           sudo -E swapoff -a
           sudo -E rm -rf /usr/share/dotnet /etc/mysql /etc/php /usr/local/lib/android /opt/ghc /swapfile
-          curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh | sudo bash
+          curl -sL https://build-scripts.immortalwrt.eu.org/init_build_environment.sh | sudo bash
 
       - name: Clone Source
         run: |
