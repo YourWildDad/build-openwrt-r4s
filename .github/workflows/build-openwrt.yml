@@ -53,13 +53,13 @@ jobs:
           bash ${GITHUB_WORKSPACE}/after_build.sh
 
       - name: Upload Packages
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Packages
           path: /home/runner/openwrt/bin/packages/
 
       - name: Upload Firmwares
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Firmwares
           path: /home/runner/openwrt/bin/targets/
