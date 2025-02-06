@@ -46,7 +46,7 @@ jobs:
           cp ${GITHUB_WORKSPACE}/.config /home/runner/openwrt
           make defconfig
           cat .config
-          make -j$[$(nproc)+1] V=sc || make -j1 V=sc
+          make -j$[$(nproc)+1]
 
       - name: After Build
         run: |
